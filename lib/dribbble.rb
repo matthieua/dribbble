@@ -1,5 +1,5 @@
 module Dribbble
-  API_URI = 'https://api.dribbble.com/v2'
+  API_URI = 'https://api.dribbble.com/v1'
 end
 
 require 'dribbble/client'
