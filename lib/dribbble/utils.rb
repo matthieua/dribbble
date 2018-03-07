@@ -40,7 +40,6 @@ module Dribbble
 
     def html_post(path, attrs = {})
       payload = {}
-      byebug
       yield payload if block_given?
       res = RestClient.post full_url(path, attrs), payload, headers
       res.force_encoding('UTF-8')
