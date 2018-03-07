@@ -2,8 +2,6 @@ require 'dribbble/utils/findable'
 
 module Dribbble
   class User < Dribbble::Base
-    include Dribbble::Utils::Findable
-
     has_many :buckets, :projects, :shots, :teams
     has_many :likes, as: Dribbble::Shot, key: 'shot'
     has_many :followers, as: Dribbble::User, key: 'follower'
